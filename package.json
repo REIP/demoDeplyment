@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "copy": "gulp",
-    "github-pages":"ng build --prod --base-href=LazyLoading && npx ngh -d dist/Angular-Lazy-Loading/"
+    "github-pages":"ng build --prod --base-href=pier && npx ngh -d ./dist/Angular-Lazy-Loading/"
   },
   "private": true,
   "dependencies": {
