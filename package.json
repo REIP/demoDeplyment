@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "copy": "gulp",
-    "github-pages":"ng build --prod --base-href=5 && npx ngh -d 'JAJA' -r https://github.com/REIP/demoDeplyment.git -S -T"
+    "github-pages":"ng build --prod --base-href=6 && npx ngh -d 'dist/Angular-Lazy-Loading/' -r https://github.com/REIP/demoDeplyment.git -S -T -n 'Pier Herbozo' -e 'pier.herbozo@sap.com'"
   },
   "private": true,
   "dependencies": {
