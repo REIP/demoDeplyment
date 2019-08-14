@@ -24,7 +24,7 @@ gulp.task('deploy', function () {
   return gulp.src('./dist/Angular-Lazy-Loading/*')
     .pipe(ghPages({ 
       origin: "https://github.com/REIP/demoDeplyment.git",
-      remoteUrl: "https://github.com/REIP/demoDeplyment.git",
+      remoteUrl: "https://github.com/REIP/demoDeplyment",
       branch:"gh-pages",
       force:true      
     }))
