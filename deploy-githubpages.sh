@@ -11,9 +11,10 @@ set +x; git config --local user.email 'piere_u@hotmail.com'
 set +x; git config --local user.name REIP
 set +x; git config --local push.default simple
 
-git remote set-url origin https://github.com/REIP/demoDeplyment.git
+#git remote set-url origin https://github.com/REIP/demoDeplyment.git
 git remote -v
 #brew tap REIP/demoDeplyment.git
+echo -e "\033[0;URL ...\033[0m"
 git config --local --add url."https://github.com/".insteadOf "https://github.com/"
 
 
