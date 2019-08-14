@@ -13,7 +13,7 @@ set +x; git config --local push.default simple
 
 
 echo -e "\033[0;32mDeleting existing $branch...\033[0m"
-git push https://REIP:rivera1234@github.com/REIP/demoDeplyment.git --delete $branch
+git push origin --delete $branch
 git branch -D $branch
 
 echo -e "\033[0;32mSetting up new $branch branch\033[0m"
@@ -37,7 +37,7 @@ cd $directory &&
   git status
   git add --all &&
   git commit -m "Deploy updates" &&
-  git push https://REIP:rivera1234@github.com/REIP/demoDeplyment.git $branch
+  git push origin $branch
 
 echo -e "\033[0;32mCleaning up...\033[0m"
 git worktree remove $directory
