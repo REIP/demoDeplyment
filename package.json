@@ -10,7 +10,7 @@
     "e2e": "ng e2e",
     "copy": "gulp",
     "github-pages-remove": "git push origin :gh-pages && ng build --prod --base-href=60 && npx ngh -d 'dist/Angular-Lazy-Loading/' -r https://github.com/REIP/demoDeplyment.git -S -T -n 'Pier Herbozo' -e 'pier.herbozo@sap.com'",
-    "github-pages": "ng build --prod --base-href=PIER && npx ngh -d 'dist/Angular-Lazy-Loading/' -r https://github.com/REIP/demoDeplyment.git -S -T -n 'Pier Herbozo' -e 'pier.herbozo@sap.com'"
+    "github-pages": "ng build --prod --base-href=REIP01 && npx ngh -d 'dist/Angular-Lazy-Loading/' -r https://github.com/REIP/demoDeplyment.git -S -T -n 'Pier Herbozo' -e 'pier.herbozo@sap.com'"
   },
   "private": true,
   "dependencies": {
