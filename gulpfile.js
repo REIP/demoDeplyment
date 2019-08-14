@@ -22,7 +22,11 @@ var ghPages = require('gulp-gh-pages');
 
 gulp.task('deploy', function () {
   return gulp.src('./dist/Angular-Lazy-Loading/*')
-    .pipe(ghPages())
+    .pipe(ghPages({ 
+      origin: "https://github.com/REIP/demoDeplyment.git",
+      remote: "https://github.com/REIP/demoDeplyment.git",
+      branch:"gh-pages"      
+    }))
 });
 
 /* var gulp = require('gulp');
