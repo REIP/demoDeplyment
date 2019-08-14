@@ -8,7 +8,7 @@ echo -e "\033[0;32mCredentials ...\033[0m"
 #git config --list
 
 set +x; git config --local user.email 'piere_u@hotmail.com'
-set +x; git config --local user.name 'https://github.com': REIP
+set +x; git config --local user.name REIP
 set +x; git config --local push.default simple
 
 git remote set-url origin https://github.com/REIP/demoDeplyment.git
