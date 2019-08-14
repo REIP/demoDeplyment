@@ -20,13 +20,11 @@ gulp.task('default', gulp.series('minifyBundles'));
 var gulp = require('gulp');
 var ghPages = require('gulp-gh-pages');
 
-gulp.task('deploy', function() {
+gulp.task('deploy', function () {
   return gulp.src('./dist/Angular-Lazy-Loading/*')
-    .pipe(ghPages()
-      ({ 
-        remoteUrl: "https://github.com/REIP/demoDeplyment.git"
-      })
-    );
+    .pipe(ghPages({ 
+      remoteUrl: "https://github.com/REIP/demoDeplyment.git"
+    }))
 });
 
 /* var gulp = require('gulp');
