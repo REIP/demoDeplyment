@@ -1,6 +1,9 @@
 directory=_site
 branch=gh-pages
 
+echo -e "\033[0;32mCredentials ...\033[0m"
+git config --global credential.helper wincred
+
 echo -e "\033[0;32mDeleting existing $branch...\033[0m"
 git push origin --delete $branch
 git branch -D $branch
