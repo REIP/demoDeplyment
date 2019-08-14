@@ -12,6 +12,7 @@ set +x; git config --local user.name REIP
 set +x; git config --local push.default simple
 
 git remote set-url origin https://github.com/REIP/demoDeplyment.git
+git remote -v
 
 echo -e "\033[0;32mDeleting existing $branch...\033[0m"
 git push origin --delete $branch
