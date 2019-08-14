@@ -3,12 +3,12 @@ branch=gh-pages
 
 echo -e "\033[0;32mCredentials ...\033[0m"
 
-git config --global user.name "REIP"
-git config --global user.email piere_u@hotmail.com
-git config --list
+#git config --global user.name "REIP"
+#git config --global user.email piere_u@hotmail.com
+#git config --list
 
 echo -e "\033[0;32mDeleting existing $branch...\033[0m"
-git push origin --delete $branch
+git push https://github.com/REIP/demoDeplyment.git --delete $branch
 git branch -D $branch
 
 echo -e "\033[0;32mSetting up new $branch branch\033[0m"
@@ -32,7 +32,7 @@ cd $directory &&
   git status
   git add --all &&
   git commit -m "Deploy updates" &&
-  git push origin $branch
+  git push https://github.com/REIP/demoDeplyment.git $branch
 
 echo -e "\033[0;32mCleaning up...\033[0m"
 git worktree remove $directory
