@@ -2,7 +2,10 @@ directory=_site
 branch=gh-pages
 
 echo -e "\033[0;32mCredentials ...\033[0m"
-git config --global credential.helper wincred
+
+git config --global user.name "REIP"
+git config --global user.email piere_u@hotmail.com
+git config --list
 
 echo -e "\033[0;32mDeleting existing $branch...\033[0m"
 git push origin --delete $branch
