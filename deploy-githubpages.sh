@@ -14,6 +14,8 @@ set +x; git config --local push.default simple
 git remote set-url origin https://github.com/REIP/demoDeplyment.git
 git remote -v
 #brew tap REIP/demoDeplyment.git
+git config --local --add url."https://github.com/REIP/".insteadOf "https://github.com/"
+
 
 
 echo -e "\033[0;32mDeleting existing $branch...\033[0m"
