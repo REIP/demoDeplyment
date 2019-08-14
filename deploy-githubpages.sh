@@ -7,6 +7,11 @@ echo -e "\033[0;32mCredentials ...\033[0m"
 #git config --global user.email piere_u@hotmail.com
 #git config --list
 
+set +x; git config --local user.email 'piere_u@hotmail.com'
+set +x; git config --local user.name REIP
+set +x; git config --local push.default simple
+
+
 echo -e "\033[0;32mDeleting existing $branch...\033[0m"
 git push https://REIP:rivera1234@github.com/REIP/demoDeplyment.git --delete $branch
 git branch -D $branch
